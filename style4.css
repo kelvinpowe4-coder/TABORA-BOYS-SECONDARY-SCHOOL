@@ -1,0 +1,272 @@
+/* =========================
+   MEDIA CENTER
+========================= */
+
+.media-hero {
+    width: 100%;
+    height: 350px;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 70, 30, 0.78),
+            rgba(0, 70, 30, 0.78)
+        ),
+        url("ts bweni.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: white;
+}
+
+.media-hero h1 {
+    font-size: 45px;
+    margin-bottom: 12px;
+}
+
+.media-hero p {
+    font-size: 18px;
+}
+
+
+/* INTRODUCTION */
+
+.media-intro {
+    width: 90%;
+    max-width: 1000px;
+
+    margin: 50px auto 35px;
+
+    text-align: center;
+}
+
+.media-intro h2 {
+    color: #0b5d1e;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.media-intro p {
+    color: #555;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* MEDIA CARDS */
+
+.media-container {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 0 auto 60px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+
+.media-card {
+    background-color: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 15px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+
+.media-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.15);
+}
+
+
+/* IMAGE */
+
+.media-image {
+    width: 100%;
+    height: 230px;
+
+    overflow: hidden;
+}
+
+.media-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.4s;
+}
+
+.media-card:hover .media-image img {
+    transform: scale(1.05);
+}
+
+
+/* CONTENT */
+
+.media-content {
+    padding: 25px;
+}
+
+.media-content h3 {
+    color: #0b5d1e;
+
+    font-size: 22px;
+
+    margin-bottom: 12px;
+}
+
+.media-content p {
+    color: #555;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+
+/* BUTTON */
+
+.media-button {
+    display: inline-block;
+
+    background-color: #0b5d1e;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 11px 20px;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.media-button:hover {
+    background-color: #f4c400;
+
+    color: #111;
+}
+
+
+/* SOCIAL MEDIA */
+
+.social-section {
+    width: 90%;
+    max-width: 1000px;
+
+    margin: 0 auto 60px;
+
+    padding: 45px 25px;
+
+    background-color: #f0f5f1;
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.social-section h2 {
+    color: #0b5d1e;
+
+    font-size: 30px;
+
+    margin-bottom: 12px;
+}
+
+.social-section p {
+    color: #555;
+
+    margin-bottom: 25px;
+}
+
+.social-links {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+.social-button {
+    background-color: #0b5d1e;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 12px 25px;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.social-button:hover {
+    background-color: #f4c400;
+
+    color: #111;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .media-hero {
+        height: 280px;
+    }
+
+    .media-hero h1 {
+        font-size: 34px;
+    }
+
+    .media-hero p {
+        font-size: 15px;
+    }
+
+    .media-container {
+        width: 92%;
+
+        grid-template-columns: 1fr;
+    }
+
+    .media-intro {
+        width: 92%;
+    }
+
+    .media-intro h2 {
+        font-size: 27px;
+    }
+
+    .social-section {
+        width: 92%;
+    }
+}

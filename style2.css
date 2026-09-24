@@ -1,0 +1,415 @@
+/* =========================================
+   OUR SERVICES PAGE
+========================================= */
+
+/* SERVICES HERO */
+.services-hero {
+    width: 100%;
+    min-height: 400px;
+
+    background-image:
+        linear-gradient(rgba(0, 70, 30, 0.75), rgba(0, 70, 30, 0.75)),
+        url("ts bweni.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.services-overlay {
+    color: white;
+    max-width: 850px;
+    padding: 30px;
+}
+
+.services-overlay h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.services-overlay p {
+    font-size: 19px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   INTRODUCTION
+========================================= */
+
+.services-intro {
+    max-width: 1000px;
+    margin: 50px auto 35px;
+    padding: 0 25px;
+    text-align: center;
+}
+
+.services-intro h2 {
+    color: #0b5d1e;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.services-intro h2::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    background-color: #f4c400;
+    margin: 12px auto;
+}
+
+.services-intro p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #555;
+}
+
+
+/* =========================================
+   SERVICES CONTAINER
+========================================= */
+
+.services-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 60px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+/* =========================================
+   SERVICE CARD
+========================================= */
+
+.service-card {
+    background-color: white;
+
+    padding: 30px 22px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    border-top: 5px solid #0b5d1e;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+    transition: all 0.3s ease;
+}
+
+
+/* CARD HOVER */
+
+.service-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+
+    border-top-color: #f4c400;
+}
+
+
+/* SERVICE ICON */
+
+.service-icon {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 20px;
+
+    background-color: #eaf4ec;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 32px;
+
+    transition: 0.3s;
+}
+
+
+/* ICON HOVER */
+
+.service-card:hover .service-icon {
+    background-color: #0b5d1e;
+
+    transform: scale(1.1);
+}
+
+
+/* CARD TITLE */
+
+.service-card h3 {
+    color: #0b5d1e;
+
+    font-size: 19px;
+
+    margin-bottom: 15px;
+}
+
+
+/* CARD DESCRIPTION */
+
+.service-card p {
+    color: #555;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   STUDENT LIFE SECTION
+========================================= */
+
+.student-life {
+    width: 90%;
+    max-width: 1200px;
+
+    min-height: 300px;
+
+    margin: 0 auto 60px;
+
+    border-radius: 12px;
+
+    background-image:
+        linear-gradient(rgba(0, 70, 30, 0.82), rgba(0, 70, 30, 0.82)),
+        url("ts bweni.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+.student-life-content {
+    color: white;
+
+    max-width: 800px;
+
+    padding: 40px;
+}
+
+
+.student-life-content h2 {
+    font-size: 32px;
+
+    margin-bottom: 15px;
+}
+
+
+.student-life-content p {
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.services-button {
+    display: inline-block;
+
+    background-color: #f4c400;
+
+    color: #111;
+
+    text-decoration: none;
+
+    padding: 12px 25px;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.services-button:hover {
+    background-color: white;
+
+    color: #0b5d1e;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background-color: #0b5d1e;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 50px;
+
+    padding: 45px 10%;
+
+    margin-top: 30px;
+}
+
+
+footer div {
+    flex: 1;
+}
+
+
+footer h3 {
+    color: #f4c400;
+
+    margin-bottom: 15px;
+
+    font-size: 19px;
+}
+
+
+footer p {
+    line-height: 1.7;
+
+    margin-bottom: 8px;
+}
+
+
+footer a {
+    color: white;
+
+    text-decoration: none;
+}
+
+
+footer a:hover {
+    color: #f4c400;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-overlay h1 {
+        font-size: 40px;
+    }
+
+    footer {
+        padding: 40px 6%;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .services-hero {
+        min-height: 320px;
+    }
+
+
+    .services-overlay {
+        padding: 20px;
+    }
+
+
+    .services-overlay h1 {
+        font-size: 30px;
+    }
+
+
+    .services-overlay p {
+        font-size: 15px;
+    }
+
+
+    .services-intro {
+        margin-top: 35px;
+    }
+
+
+    .services-intro h2 {
+        font-size: 27px;
+    }
+
+
+    .services-container {
+        width: 92%;
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    .service-card {
+        padding: 25px 20px;
+    }
+
+
+    .student-life {
+        width: 92%;
+    }
+
+
+    .student-life-content {
+        padding: 30px 20px;
+    }
+
+
+    .student-life-content h2 {
+        font-size: 27px;
+    }
+
+
+    .student-life-content p {
+        font-size: 15px;
+    }
+
+
+    footer {
+        flex-direction: column;
+
+        padding: 35px 25px;
+
+        gap: 30px;
+    }
+
+}
